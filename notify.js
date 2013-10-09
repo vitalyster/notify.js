@@ -41,6 +41,9 @@ Notifications.prototype.create = function (title, opts) {
         notice = window.webkitNotifications.createNotification(opts.icon, title, opts.body);
         _.extend(notice, opts);
         notice.show();
+        setTimeout(function () {
+            notice.cancel();
+        }, 5000);
     } else {
         this.fallback.create(title, opts);
     }
