@@ -1,0 +1,27 @@
+{
+    "name": "notify.js",
+    "version": "0.0.1",
+    "description": "A consistent wrapper for various Desktop Notifications APIs",
+    "main": "notify.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/legastero/notify.js.git"
+    },
+    "keywords": [
+        "notify",
+        "notifications",
+        "desktop"
+    ],
+    "contributors": [
+        "Lance Stout <lance@andyet.net>"
+    ],
+    "license": "MIT",
+    "dependencies": {
+        "underscore": "1.5.2"
+    },
+    "devDependencies": {
+        "precommit-hook": "0.3.8",
+        "uglify-js": "2.3.6",
+        "browserify": "2.25.1"
+    }
+}
