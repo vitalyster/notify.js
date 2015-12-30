@@ -38,7 +38,7 @@ Notifications.prototype.create = function (title, opts) {
     } else if (window.Notification) {
         notice = new window.Notification(title, opts);
         setTimeout(function () {
-            notice.cancel();
+            notice.close();
         }, 5000);
     } else if (window.webkitNotifications) {
         notice = window.webkitNotifications.createNotification(opts.icon, title, opts.body);
